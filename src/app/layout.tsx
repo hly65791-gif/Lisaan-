@@ -2,8 +2,12 @@ import "./globals.css";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { ReactNode } from "react";
+import type { Metadata } from "next";
 
-export const metadata = { title: "Lisan", description: "ترجمة الفيديو بالذكاء الاصطناعي" };
+export const metadata: Metadata = {
+  title: "Lisan",
+  description: "ترجمة الفيديو بالذكاء الاصطناعي",
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
