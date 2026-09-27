@@ -1,17 +1,20 @@
 import Link from "next/link";
-import Image from "next/image";
 
-export function Navbar() {
+export const Navbar = () => {
   return (
-      <nav className="border-b border-neutral-800 bg-neutral-950/80 backdrop-blur sticky top-0 z-50">
-            <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-                    <Link href="/" className="flex items-center gap-3">
-                              <Image
-                                          src="/logo.jpg"
-                                                      alt="Lisan"
-                                                                  width={44}
-                                                                              height={44}
-                                                                                          className="rounded-xl"
+    <nav className="bg-white shadow-md p-4">
+      <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <Link href="/" className="text-xl font-bold text-indigo-600">
+          لسان
+        </Link>
+        <div className="flex gap-4">
+          <Link href="/" className="hover:text-indigo-600">الرئيسية</Link>
+          <Link href="/upload" className="hover:text-indigo-600">رفع فيديو</Link>
+        </div>
+      </div>
+    </nav>
+  );
+};                                               className="rounded-xl"
                                                                                                       priority
                                                                                                                 />
                                                                                                                           <span className="text-xl font-extrabold text-indigo-400">Lisan</span>
