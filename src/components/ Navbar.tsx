@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 export const Navbar = () => {
   return (
     <nav className="bg-white shadow-md p-4">
